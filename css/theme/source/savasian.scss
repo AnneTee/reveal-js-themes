@@ -18,7 +18,6 @@ html * {
   rendering-intent: auto;
 }
 
-// TODO: Get these working.
 // Solarized colors
 $base03:    #002b36; // darkest blue
 $base02:    #073642; // dark blue
@@ -33,8 +32,8 @@ $orange:    #f6433e;
 $red:       #9e023b;
 $magenta:   #d33682;
 $violet:    #501888;
-$blue:      #14133b;
-$cyan:      #0a5365; // Inline syntax highlighting.
+$blue:      #14133b; // Inline syntax highlighting.
+$cyan:      #0a5365;
 $green:     #055c2b;
 
 // Theme colors
@@ -90,26 +89,24 @@ body {
 
   .heading-color { color: $headingColor; }
 
-  // Code snippets -------------------------------------------------------------
-
-  // TODO: Code theme should match overall theme better.
-  code {
-    background-color: #3F3F3F;
-    border: 1px solid darken($dark-blue, 10%);
-    border-radius: 5px;
-    color: #DCDCDC;
-    display: inline-block;
-    font-size: .8em;
-    margin: -1px 0 0;
-    padding: 0 5px;
-  }
-
   blockquote {
     border-radius: 0 10px 10px 0;
     color: $dark-blue;
     padding: 15px;
     background: rgba(244, 209, 166, .8);
     text-align: left;
+  }
+
+  // Inline code ---------------------------------------------------------------
+  p code {
+    background-color: $gainsboro;
+    border: 1px solid darken($dark-blue, 10%);
+    border-radius: 5px;
+    color: $blue;
+    display: inline-block;
+    font-size: .8em;
+    margin: -1px 0 0;
+    padding: 0 5px;
   }
 
   // Images --------------------------------------------------------------------

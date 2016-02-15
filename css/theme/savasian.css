@@ -314,11 +314,11 @@ body {
 .reveal .heading-color {
   color: #d0034e; }
 
-.reveal code {
-  background-color: #3F3F3F;
+.reveal p code {
+  background-color: #dcdcdc;
   border: 1px solid #070714;
   border-radius: 5px;
-  color: #DCDCDC;
+  color: #14133b;
   display: inline-block;
   font-size: .8em;
   margin: -1px 0 0;
