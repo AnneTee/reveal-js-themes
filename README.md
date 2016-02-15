@@ -7,9 +7,9 @@ A framework for easily creating beautiful presentations using HTML. [Check out t
 2. Run `grunt serve` to serve the presentation locally.
 3. To change the theme, update this line in index.html:
 
-```html
-<link rel="stylesheet" href="css/theme/black.css" id="theme">
-```
+  ```html
+  <link rel="stylesheet" href="css/theme/black.css" id="theme">
+  ```
 
 4. Follow the TODOs in index.html to update meta information.
 5. Template slides are included in index.html.
