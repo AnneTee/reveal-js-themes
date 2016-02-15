@@ -49,6 +49,7 @@ $white: #fff;
 // Override theme settings (see ../template/settings.scss)
 $mainColor: $beige;
 $headingColor: lighten($fuschia, 10%);
+$secondaryHeadingColor: $orange;
 $headingTextShadow: none;
 $backgroundColor: $dark-blue;
 $linkColor: $orange;
@@ -75,7 +76,7 @@ body {
 .reveal {
 
   // General text styles -------------------------------------------------------
-  h1, h3 { color: $orange; }
+  h1, h3 { color: $secondaryHeadingColor; }
 
   p { text-align: left; }
 
@@ -87,7 +88,7 @@ body {
 
   .caption { margin-top: -15px; }
 
-  .fuschia { color: $fuschia; }
+  .heading-color { color: $headingColor; }
 
   // Code snippets -------------------------------------------------------------
 
@@ -112,26 +113,29 @@ body {
   }
 
   // Images --------------------------------------------------------------------
-
-  // TODO: Handle images.
   .no-border {
     background-color: $backgroundColor;
     border: none;
   }
 
-  // Introduction slide --------------------------------------------------------
-  .savas {
+  .img-right {
     display: inline-block;
     margin-left: 20px;
-    margin-top: 40px;
-    vertical-align: top;
   }
 
-  .durham {
+  .img-left {
     display: inline-block;
     margin-right: 20px;
+  }
 
-    p {
+  // Per-slide styles ----------------------------------------------------------
+  .intro-slide {
+    .img-right {
+      margin-top: 40px;
+      vertical-align: top;
+    }
+
+    .img-left p {
       font-size: .8em;
       margin-top: -20px;
       text-align: center;

@@ -311,8 +311,8 @@ body {
 .reveal .caption {
   margin-top: -15px; }
 
-.reveal .fuschia {
-  color: #9e023b; }
+.reveal .heading-color {
+  color: #d0034e; }
 
 .reveal code {
   background-color: #3F3F3F;
@@ -335,16 +335,19 @@ body {
   background-color: #14133b;
   border: none; }
 
-.reveal .savas {
+.reveal .img-right {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 20px; }
+
+.reveal .img-left {
+  display: inline-block;
+  margin-right: 20px; }
+
+.reveal .intro-slide .img-right {
   margin-top: 40px;
   vertical-align: top; }
 
-.reveal .durham {
-  display: inline-block;
-  margin-right: 20px; }
-  .reveal .durham p {
-    font-size: .8em;
-    margin-top: -20px;
-    text-align: center; }
+.reveal .intro-slide .img-left p {
+  font-size: .8em;
+  margin-top: -20px;
+  text-align: center; }
